@@ -1,0 +1,105 @@
+
+
+### Install git
+
+```bash
+sudo apt install git
+```
+### ThunderBird
+```bash
+sudo apt install thunderbird
+```
+
+### Install Zsh shell
+
+```bash
+sudo apt install zsh -y
+chsh -s $(which zsh)
+```
+open terminal and choose option 0 to create empty .zshrc file
+
+install oh-my-zsh
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+configure zsh
+```bash
+nano ~/.zshrc
+```
+paste the configuration.
+```bash
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+
+ZSH_THEME="itchy"
+
+plugins=(zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+export PATH="$PATH:/opt/nvim/"
+
+``` 
+
+to change zsh theme goto: https://github.com/ohmyzsh/ohmyzsh/wiki/themes
+and write name of theme in the .zshrc file
+
+
+### Kitty Terminal
+
+```bash
+sudo apt install Kitty
+```
+copy the configuration to correct path:
+```bash
+git clone https://github.com/prajall/kitty-config.git ~/.config/kitty
+```
+set kitty as default terminal
+```bash
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
+sudo update-alternatives --config x-terminal-emulator
+```
+
+
+### Neovim
+
+First install curl and nodejs:
+```bash
+sudo apt install curl
+sudo apt install nodejs npm -y
+```
+
+Download .AppImage file for neovim and make it executable
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod u+x nvim-linux-x86_64.appimage
+```
+
+To make vim expose globally
+```bash
+mkdir -p /opt/nvim
+mv nvim-linux-x86_64.appimage /opt/nvim/nvim
+```
+```bash
+export PATH="$PATH:/opt/nvim/"
+```
+
+Nvim is ready, now setup packages and configurations:
+
+
+```bash
+# Install GCC and luarocks
+sudo apt install build-essential gcc make unzip git curl
+sudo apt install lua5.1 liblua5.1-0-dev luarocks
+```
+```bash
+git clone https://github.com/prajall/nvim-config.git ~/.config/nvim
+```
+
+
+
+
+
+
+
+

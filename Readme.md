@@ -95,6 +95,10 @@ sudo apt install lua5.1 liblua5.1-0-dev luarocks
 ```bash
 git clone https://github.com/prajall/nvim-config.git ~/.config/nvim
 ```
+to enable yanking and pasting to system clipboard, install xclip:
+```bash
+sudo apt install xclip
+``` 
 
 
 # Chrome

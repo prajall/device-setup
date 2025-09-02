@@ -103,4 +103,25 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
+# Popshell
+```bash
+sudo apt install git node-typescript make gnome-shell-extension-prefs
+```
+```bash
+git clone https://github.com/pop-os/shell.git
+cd shell
+git checkout master_jammy
+```
+build the package
+```bash
+make local-install
+```
+you need add your gnome version in the metadata.json's shell-version array.
+```bash
+# check your gnome version
+gnome-shell --version
+# edit metadata.json
+nano metadata.json
+# add your gome version eg:"48"
+```
 

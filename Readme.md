@@ -1,16 +1,16 @@
 
 
-### Install git
+# Install git
 
 ```bash
 sudo apt install git
 ```
-### ThunderBird
+# ThunderBird
 ```bash
 sudo apt install thunderbird
 ```
 
-### Install Zsh shell
+# Install Zsh shell
 
 ```bash
 sudo apt install zsh -y
@@ -45,7 +45,7 @@ to change zsh theme goto: https://github.com/ohmyzsh/ohmyzsh/wiki/themes
 and write name of theme in the .zshrc file
 
 
-### Kitty Terminal
+# Kitty Terminal
 
 ```bash
 sudo apt install Kitty
@@ -61,7 +61,7 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 
 
-### Neovim
+# Neovim
 
 First install curl and nodejs:
 ```bash
@@ -97,7 +97,7 @@ git clone https://github.com/prajall/nvim-config.git ~/.config/nvim
 ```
 
 
-### Chrome
+# Chrome
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb

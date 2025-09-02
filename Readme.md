@@ -10,6 +10,14 @@ sudo apt install git
 sudo apt install thunderbird
 ```
 
+# Mattermost
+Download amd .deb file for mattermost  https://github.com/mattermost/desktop/releases/tag/v5.13.0
+```bash
+cd ~/Downloads
+sudo dpkg -i ./mattermost-desktop_5.13.0-1_amd64.deb
+```
+
+
 # Install Zsh shell
 
 ```bash

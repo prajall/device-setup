@@ -124,4 +124,5 @@ gnome-shell --version
 nano metadata.json
 # add your gome version eg:"48"
 ```
+finally restart your pc
 
